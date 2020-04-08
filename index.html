@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titre">
+        <b>Control your expenses!</b>
+      </h1>
+
+      <p class="descrition">
+        Swile ( lunchr ) is an application that simplifies the management of
+        luncheon vouchers by companies. The company provides employees with a
+        Mastercard connected to an application. Each month, the Lunchr account
+        is funded by the company. However, at the moment, it is complicated to
+        keep track of lunchr activities because the money provided by the
+        company is not directly accessible and visible on the bank account.
+        <br />
+        For each activity, the user should be informed directly to allow him to
+        manage his expenses. This will save time, he will be informed in real
+        time of the status of his Lunchr account.
+      </p>
+      <p>
+        In order to control our spending, we could create an applet tha would
+        send a text to the user according to his activities. For instance, when
+        the user approaches 0 in his lunchr account, a text could warn him "
+        Careful! You have only 20 euros left on your account". We could think of
+        other scenarios such as sending a sms when the user spends more than a
+        particular amount ( define the amount).
+      </p>
+      <div class="row">
+        <div class="twelve columns">
+          <img
+            src="https://cdn.glitch.com/314f6f15-ffc2-433b-80f3-f497a6b4d474%2Fcarte%20lunhr.jpeg?v=1586341874449"
+          />
+        </div>
+      </div>
+
+      <h1 class="titre2">
+        <b>How will it work ?</b>
+      </h1>
+      <img
+        src="https://cdn.glitch.com/314f6f15-ffc2-433b-80f3-f497a6b4d474%2FNewapplet.png?v=1586346683776"
+      />
+      <p class="list"></p>
+      <ul>
+        <li>Register and create your account and click on” new applet”</li>
+        <li>Click on"+this" to select the trigger</li>
+        <li>Search and select webhook</li>
+        <li>Click on the connect button</li>
+        <li>Click on "receive a request"</li>
+        <li>
+          Name your event "lunchr activities"and click on "create trigger"
+        </li>
+        <li>Click on "+that"to select the action to accomplish</li>
+        <li>Search and select "sms"and choose "send a sms"</li>
+        <li>Enter the phone Number</li>
+        <li>click on "create action" and "finish"</li>
+
+        <b>you will then have to code the event that will action the webhook</b>
+      </ul>
+      <img src="https://media.giphy.com/media/3ohhwpiTkLCb1zsCTC/giphy.gif" />
+    </div>
+  </body>
+</html>
